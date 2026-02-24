@@ -56,23 +56,23 @@ export default function Profile() {
             <div id='infoGrid'>
               <div className='infoGridItem'>
                 <FaUserCircle className='icon'/>
-                <span>문병욱</span>
+                <span className='infoText'>문병욱</span>
               </div>
               <div className='infoGridItem'>
                 <MdDateRange className='icon'/>
-                <span>2001년 09월 29일</span>
+                <span className='infoText'>2001년 09월 29일</span>
               </div>
               <div className='infoGridItem'>
                 <FaLocationDot className='icon'/>
-                <span>서울특별시 강동구</span>
+                <span className='infoText'>서울특별시 강동구</span>
               </div>
               <div className='infoGridItem'>
                 <IoCall className='icon'/>
-                <span>010-6711-1606</span>
+                <span className='infoText'>010-6711-1606</span>
               </div>
               <div className='infoGridItem'>
                 <IoIosMail className='icon'/>
-                <span>ansquddnr4545@gmail.com</span>
+                <span className='infoText'>ansquddnr4545@gmail.com</span>
               </div>
             </div>
           </section>
@@ -80,16 +80,16 @@ export default function Profile() {
           <section>
             <div className='subTitle'>학력</div>
             <div className='subContent'>
-              <div>한국공학대학교 졸업 (컴퓨터전자공학)</div>
+              <div className='infoText'>한국공학대학교 졸업 (컴퓨터전자공학)</div>
             </div>
           </section>
 
           <section>
             <div className='subTitle'>자격증</div>
             <div className='subContent'>
-              <div>정보처리기사</div>
-              <div>데이터분석준전문가 (ADsP)</div>
-              <div>AI-900 (Azure AI Fundamentals)</div>
+              <div className='infoText'>정보처리기사</div>
+              <div className='infoText'>데이터분석준전문가 (ADsP)</div>
+              <div className='infoText'>AI-900 (Azure AI Fundamentals)</div>
             </div>
           </section>
 
