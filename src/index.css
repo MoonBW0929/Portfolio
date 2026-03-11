@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: min(1100px, 100% - 40px);
+  width: min(1000px, 100% - 40px);
   margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .section {
-  min-height: calc(100svh - 64px);
+  min-height: calc(100svh);
   scroll-snap-align: start; 
   padding: 72px 0;
   border-bottom: 1px solid rgba(127, 127, 127, 0.12);
