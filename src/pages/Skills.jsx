@@ -1,26 +1,45 @@
 import './page_styles.css'
+import { Icon } from '@iconify/react';
 
 export default function Skills() {
 
-  const colors = [
-    ["#F8C8C8", "#F6D7B0", "#F9F1C7", "#D7EAD3", "#D6E4F0"],
-    ["#E6D9F2", "#E8E0D5", "#CFE8E5"],
-    ["#F7D6E0", "#FBE3C2", "#F3E7A1"],
-    ["#CFE7D9", "#CFE0F7"],
-    ["#DDD6F5", "#E3D5CA"],
-    ["#D6F0EE"]
+  const allTechs = [
+    "C", "C++", "Python", "JavaScript", "Java",
+    "jQuery", "React", "React-native", "Vite",
+    "Flask", "FastAPI", "Node.js",
+    "OracleDB", "MongoDB", "DBeaver",
+    "Azure AI", "Pytorch",
+    "Qt", "Github", "Expo",
+    "Arduino", "Embedded", "Linux"
   ];
-  const techTitle = [
-    "Language", "Frontend", "Backend", "Database", "AI / ML", "Desktop"
-  ];
-  const techs = [
-    ["C", "C++", "Python", "JavaScript", "Java"],
-    ["React", "React-native", "Vite"],
-    ["Flask", "FastAPI", "Node.js"],
-    ["OracleDB", "MongoDB"],
-    ["Azure AI", "Pytorch"],
-    ["Qt"]
-  ];
+
+  // Logo name dict
+  const skillIcons = {
+    C: 'devicon:c',
+    'C++': 'devicon:cplusplus',
+    Python: 'devicon:python',
+    JavaScript: 'devicon:javascript',
+    Java: 'devicon:java',
+    React: 'devicon:react',
+    'React-native': 'devicon:react',
+    Vite: 'devicon:vitejs',
+    Flask: 'devicon:flask',
+    FastAPI: 'devicon:fastapi',
+    'Node.js': 'devicon:nodejs',
+    OracleDB: 'devicon:oracle',
+    MongoDB: 'devicon:mongodb',
+    'Azure AI': 'devicon:azure',
+    Pytorch: 'devicon:pytorch',
+    Qt: 'devicon:qt',
+    Github: "devicon:github",
+    Expo: "devicon:expo",
+    Arduino: "devicon:arduino",
+    DBeaver: "devicon:dbeaver",
+    Embedded: "devicon:embeddedc",
+    Linux: "devicon:linux",
+    jQuery: "devicon:jquery"
+  };
+  
 
   return (
     <section id="skills" className="section">
@@ -28,22 +47,15 @@ export default function Skills() {
         <h1 className="sectionTitle">Skills</h1>
 
         <div className="skillsBox">
-          
-          {
-            techTitle.map((title, i) => (
-              <div className='skillRow'>
-                <span className='title'>{title}</span>
-                <div className='tags'>
-                  {
-                    techs[i].map((tech, j) => (
-                      <span className="skillTag" style={{backgroundColor : colors[i][j]}}>{tech}</span>
-                    ))
-                  }
-                </div>
+          <div className='subTitle'>My Skills & Technologies</div>
+          <div className="skillsGrid">
+            {allTechs.map((tech) => (
+              <div key={tech} className="skillItem">
+                <Icon className="Icon" icon={skillIcons[tech]} />
+                <span className="skillLabel">{tech}</span>
               </div>
-            ))
-          }
-
+            ))}
+          </div>
         </div>
       </div>
     </section>
