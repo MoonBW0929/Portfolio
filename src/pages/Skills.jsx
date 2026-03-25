@@ -10,7 +10,7 @@ export default function Skills() {
     "OracleDB", "MongoDB", "DBeaver",
     "Azure AI", "Pytorch",
     "Qt", "Github", "Expo",
-    "Arduino", "Embedded", "Linux"
+    "Arduino", "Embedded"
   ];
 
   // Logo name dict
@@ -36,7 +36,6 @@ export default function Skills() {
     Arduino: "devicon:arduino",
     DBeaver: "devicon:dbeaver",
     Embedded: "devicon:embeddedc",
-    Linux: "devicon:linux",
     jQuery: "devicon:jquery"
   };
   
